@@ -65,7 +65,7 @@ body {
   .unselectable {
     user-select: none;
   }
-      .image-container {
+    .image-container {
       position: relative;
       display: inline-block;
     }
@@ -84,16 +84,17 @@ body {
       color: white;
       padding: 10px;
       border-radius: 5px;
-      opacity: 1;
+      opacity: 0;
       transition: opacity 1s ease-in-out;
     }
 </style>
   <script type="text/javascript" src="https://www.authpro.com/auth/sad_bred/?action=pp">
 </script>
-    <script>
+  <script>
     const fadeBox = document.getElementById('textbox');
+    const imageContainer = document.querySelector('.image-container');
 
-    window.addEventListener('contextmenu', function(event) {
+    imageContainer.addEventListener('contextmenu', function(event) {
       event.preventDefault();
       fadeBox.style.opacity = '1';
 
@@ -127,7 +128,7 @@ body {
     <div class="image-container">
     <img src="https://github.com/sadbred/sadbred.github.io/blob/main/img/20230606_161702.jpg?raw=true" class="unselectable" alt="Gary_png" width="100" height="100">
     <div class="fade-box" id="textbox">
-      Fucking dont
+      Please Don't
     </div>
   </div>
 
