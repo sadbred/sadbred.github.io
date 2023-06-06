@@ -6,11 +6,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-   #blur {
-        font-size: 20px;
-        color: transparent;
-        text-shadow: 0 0 8px #000;
-      }
+  
+  #blur {
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+      color: transparent; /* Make the text color transparent */
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Apply a text shadow for a blurry effect */
+    }
 
   body {
   background-color: white;
