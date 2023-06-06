@@ -5,10 +5,6 @@
   <link rel="icon" href="https://github.com/sadbred/sadbred.github.io/blob/main/img/20230606_161702.jpg?raw=true">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    .dark-mode {
-  background-color: black;
-  color: white;
-}
     body {
       background-color: white;
       color: black;
@@ -98,8 +94,14 @@
 </script>
 </head>
 <body>
-  <div class="topnav">
-    <button class="topnav" onclick="myFunction()">Toggle Dark Mode</button>
+      <button class="topnav" onclick="myFunction()">Toggle dark Mode</button>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+  </script>
+
     <a class="active" href="home.html">Home</a>
     <a class="inactive1" href="other.html">Other</a>
     <a class="inactive2" href="contact.html">Contact</a>
