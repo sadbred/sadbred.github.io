@@ -3,7 +3,10 @@
                 font-family: 'CustomFont';
                 src: url('KOMIKAX.ttf') format('truetype');
             }
-
+            
+            p1.KOMIKAX{
+                font-family: 'CustomFont', sans-serif;
+            }
 
             h1.KOMIKAX {
                 font-family: 'CustomFont', sans-serif; /* Use the custom font as a fallback */
