@@ -26,3 +26,28 @@ body {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+/* Styles for the cookie bar */
+.cookie-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #403738; /* Pink background color */
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px; /* Rounded edges */
+    color: white; /* White text color */
+  }
+  
+  /* Styles for the "Accept" button */
+  #acceptButton {
+    background-color: rgb(167, 167, 178); /* Blue background color */
+    color: rgb(255, 255, 255); /* Purple text color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer;
+  }
+  
+  
