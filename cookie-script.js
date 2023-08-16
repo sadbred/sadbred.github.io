@@ -40,12 +40,3 @@ if (acceptButton) {
     });
 }
 
-// Show the cookie bar with a delay of 3 seconds
-window.onload = function() {
-    setTimeout(function() {
-        const cookieBar = document.getElementById("cookieBar");
-        if (cookieBar && !hasAcceptedCookies()) {
-            cookieBar.style.display = "block";
-        }
-    }, 3000); // 3000 milliseconds = 3 seconds
-};
