@@ -1,98 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head><link rel="icon" type="image/png" href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-16x16.png">
+<head>
+  <link rel="icon" type="image/png" href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-16x16.png">
     <title>Home - sadbred.github.io</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: "Lato", sans-serif;
-  background-color: black;
-}
-
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
     .indented {
       padding-left: 20px; /* Adjust the value to your desired indentation */
     }
+
 </style>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1693875466504870"
      crossorigin="anonymous"></script>
+     <link rel="stylesheet" type="text/css" href="font.css">
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <link rel="stylesheet" type="text/css" href="pages.css">
 </head>
 <body>
-    <link rel="icon" type="image/png" sizes="32x32" href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-32x32.png">
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a href="index.html">Home</a>
   <a href="mario.html">Mario</a>
-  <a href="#">Game</a>
-  <a href="#">Game</a>
-  <a href="#">Game</a>
-  <a href="#">Game</a>
+  <a href="slope.html">Slope</a>
+  <a href="smashkarts.html">Smash Karts</a>
+  <a href="minecraft.html">Minecraft Classic</a>
+  <a href="xevious.html">Xevious</a>
+  <a href="donkeykong.html">Donkey Kong</a>
+  <form id="adminForm">
+    <label for="secretPhrase">Enter Secret Phrase:</label>
+    <input type="password" id="secretPhrase" name="secretPhrase" autocomplete="off">
+    <button id="submitBtn" type="submit" value="Submit">Submit</button>
+  </form>
+  <script src="admin.js"></script>
 </div>
-
 <div id="main">
   <button class="openbtn" onclick="openNav()">☰ Games</button>  
     
 </div>
 <div class="indented">
-    <h1 style="color:white">Welcome to sadbred.github.io!</h1>
-    <p style="color:white">Soon you will be able to find some of the best online games that you can play on a browser. <br>I am still working on this website when I have time, you can also suggest games for me to add. You can suggest them by sending the link to the game to this email <u><i>sadbred951@gmail.com</i></u> it will also depend on what the game is and how well it runs on lower end computers (like chromebooks which are the most commonly used computers in schools).<br><br><br><hr><br><p style="color:white"> I am also writing all of the web pages by hand in Visual Studio Code, so plz be patient with me.</p></p>
-    <br><br><p style="color:white">Big Update Coming soon!</p>
+    <h1 style="color:white" class="KOMIKAX">Welcome to sadbred.github.io!</h1>
+    <p style="color:white">Soon you will be able to find some of the best online games that you can play on a browser. <br>I am still working on this website when I have time, you can also suggest games for me to add. You can suggest them by sending the link to the game to this email <u><i>sadbred951@gmail.com</i></u> it will also depend on what the game is and how well it runs on lower end computers (like chromebooks which are the most commonly used computers in schools).
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p style="color:white" > I am also writing all of the web pages by hand in Visual Studio Code, so plz be patient with me.</p></p>
 </div>
 <script>
 function openNav() {
@@ -105,6 +59,8 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-   
+<div>
+
+</div>
 </body>
 </html> 

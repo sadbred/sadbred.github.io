@@ -1,0 +1,10 @@
+            /* Define the @font-face rule for the custom font */
+            @font-face {
+                font-family: 'CustomFont';
+                src: url('KOMIKAX.ttf') format('truetype');
+            }
+
+
+            h1.KOMIKAX {
+                font-family: 'CustomFont', sans-serif; /* Use the custom font as a fallback */
+            }
