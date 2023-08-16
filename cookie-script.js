@@ -40,14 +40,12 @@ if (acceptButton) {
     });
 }
 
-// On page load, check if cookies have been accepted and show/hide the cookie bar accordingly
+// Show the cookie bar with a delay of 3 seconds
 window.onload = function() {
-    const cookieBar = document.getElementById("cookieBar");
-    if (cookieBar) {
-        if (hasAcceptedCookies()) {
-            cookieBar.style.display = "none"; // Hide the cookie bar if cookies have been accepted
-        } else {
-            cookieBar.style.display = "block"; // Show the cookie bar if cookies have not been accepted
+    setTimeout(function() {
+        const cookieBar = document.getElementById("cookieBar");
+        if (cookieBar && !hasAcceptedCookies()) {
+            cookieBar.style.display = "block";
         }
-    }
+    }, 3000); // 3000 milliseconds = 3 seconds
 };
