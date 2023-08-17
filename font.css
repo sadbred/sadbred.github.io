@@ -12,3 +12,9 @@
             h1.KOMIKAX {
                 font-family: 'CustomFont', sans-serif; /* Use the custom font as a fallback */
             }
+
+            p.KOMIKAX {
+                font-family: 'CustomFont', sans-serif; /* Use the custom font as a fallback */
+            }
+
+
