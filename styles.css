@@ -97,3 +97,40 @@ body {
     background-color: #575757; /* Color of the track (scrollbar background) */
   }
   
+
+.chat {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .servers {
+    width: 20%;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .server {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
