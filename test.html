@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Username Saving Example</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+
+    <!-- Input field for the username -->
+    <input type="text" id="username" placeholder="Enter your username">
+    <button onclick="saveUsername()">Save Username</button>
+
+    <p id="savedUsername"></p>
+
+    <script>
+        // Function to save the username
+        function saveUsername() {
+            const username = document.getElementById('username').value;
+            localStorage.setItem('username', username);
+            document.getElementById('savedUsername').textContent = `Username saved: ${username}`;
+        }
+
+        // Check if a username is already saved
+        const savedUsername = localStorage.getItem('username');
+        if (savedUsername) {
+            document.getElementById('username').value = savedUsername; // Fill the input field
+            document.getElementById('savedUsername').textContent = `Username saved: ${savedUsername}`;
+        }
+    </script>
+</body>
+</html>
